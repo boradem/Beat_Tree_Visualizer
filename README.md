@@ -23,7 +23,6 @@ Bu görsel deneyimi kendi bilgisayarınızda çalıştırmak için aşağıdaki 
 pip install -r requirements.txt
 ```
 
-*Not: Spotify entegrasyonu için ek kurulum gerekebilir.*
 
 ## Nasıl Kullanılır?
 
@@ -56,12 +55,4 @@ Uygulama çalışırken klavyenizle şu komutları verebilirsiniz:
 - **D**: Otomatik tema değişimini aç/kapat
 - **ESC**: Çıkış
 
-## Teknolojinin Arkasındaki Büyü
-
-Bu projenin kalbinde birkaç güçlü kütüphane yatıyor:
-- **Librosa**: Müziğin matematiğini çözer ve ritmi algılar.
-- **Pygame**: Hesaplanan verileri akıcı bir görsel deneyime dönüştürür.
-- **Fractal Algoritmalar**: Doğadaki ağaç yapısını taklit ederek her seferinde benzersiz bir görüntü oluşturur.
-
-Umarım bu görselleştirici, müzik dinleme deneyiminize yeni bir boyut katar. Keyifli seyirler!
 
