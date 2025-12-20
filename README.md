@@ -1,7 +1,5 @@
 # Beat Tree Visualizer
 
-Müzik, sadece duyduğumuz bir şey değil; hissettiğimiz ve bazen de görmek istediğimiz bir deneyimdir. Beat Tree Visualizer, en sevdiğiniz şarkıların ritmini ve enerjisini alıp, müziğin nabzıyla büyüyen ve nefes alan dinamik bir ağaca dönüştürür.
-
 Bu proje, ses dosyalarını analiz ederek ritim vuruşlarını (beat) yakalar ve bu veriyi gerçek zamanlı bir görsel şölene çevirir. Şarkının yoğunluğuna göre renk değiştiren yapraklar ve ritme ayak uyduran dallar ile müziğinizi izlemenin keyfini çıkarın.
 
 ## Öne Çıkan Özellikler
