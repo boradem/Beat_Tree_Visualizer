@@ -1,119 +1,69 @@
-# Beat Tree Visualizer 🎵🌳
+# Beat Tree Visualizer
 
-Şarkı beat'lerini gerçek zamanlı olarak ağaç yapısı şeklinde görselleştiren Python uygulaması.
+Müzik, sadece duyduğumuz bir şey değil; hissettiğimiz ve bazen de görmek istediğimiz bir deneyimdir. Beat Tree Visualizer, en sevdiğiniz şarkıların ritmini ve enerjisini alıp, müziğin nabzıyla büyüyen ve nefes alan dinamik bir ağaca dönüştürür.
 
-## Özellikler
+Bu proje, ses dosyalarını analiz ederek ritim vuruşlarını (beat) yakalar ve bu veriyi gerçek zamanlı bir görsel şölene çevirir. Şarkının yoğunluğuna göre renk değiştiren yapraklar ve ritme ayak uyduran dallar ile müziğinizi izlemenin keyfini çıkarın.
 
-- 🎶 Audio dosyalarından otomatik beat detection
-- 🌳 Beat'lere göre dinamik ağaç yapısı görselleştirme
-- 🎨 Beat yoğunluğuna göre renk ve boyut değişimi
-- ⏯️ Oynat/Duraklat kontrolü
-- 📊 Gerçek zamanlı beat takibi
+## Öne Çıkan Özellikler
 
-## Kurulum
+- **Akıllı Ritim Analizi**: Yüklediğiniz ses dosyasının ritmini ve vuruş noktalarını otomatik olarak algılar.
+- **Canlı Görselleştirme**: Müziğin her vuruşunda ağacın nasıl tepki verdiğini anlık olarak izleyin.
+- **Dinamik Atmosfer**: Şarkının enerjisine göre değişen renk paletleri ve büyüme efektleri.
+- **Kolay Kontrol**: Oynatma, duraklatma ve ses kontrolü parmaklarınızın ucunda.
 
-1. FFmpeg yükleyin (audio formatları için gerekli):
-   - macOS: `brew install ffmpeg`
-   - Linux: `sudo apt install ffmpeg` veya `sudo yum install ffmpeg`
-   - Windows: [FFmpeg resmi sitesinden](https://ffmpeg.org/download.html) indirin
+## Kurulum ve Başlangıç
 
-2. Gerekli Python paketlerini yükleyin:
+Bu görsel deneyimi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
+
+1. **Gerekli Araçlar**: Ses formatlarını işleyebilmek için FFmpeg kütüphanesine ihtiyacınız olacak.
+   - macOS kullanıcıları: `brew install ffmpeg`
+   - Windows ve Linux kullanıcıları için detaylı bilgi: [FFmpeg İndir](https://ffmpeg.org/download.html)
+
+2. **Paketlerin Yüklenmesi**: Proje dizininde terminali açın ve gerekli Python kütüphanelerini yükleyin:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**Not**: spotdl için ek kurulum gerekebilir. Detaylar için: https://spotdl.readthedocs.io/
+*Not: Spotify entegrasyonu için ek kurulum gerekebilir.*
 
-## Kullanım
+## Nasıl Kullanılır?
 
-### Dosya yolu ile:
+Uygulamayı çalıştırmak oldukça basittir. İster bilgisayarınızdaki bir dosyayı, ister YouTube veya Spotify bağlantısını kullanabilirsiniz.
+
+### Yerel Dosya ile Başlatma
 ```bash
-python beat_tree_visualizer.py <şarkı_dosyası>
+python beat_tree_visualizer.py sarki_dosyasi.mp3
 ```
 
-### YouTube linki ile:
+### YouTube Bağlantısı ile Başlatma
+Sevdiğiniz bir YouTube videosunun linkini yapıştırmanız yeterli:
 ```bash
 python beat_tree_visualizer.py https://www.youtube.com/watch?v=VIDEO_ID
-# veya
-python beat_tree_visualizer.py https://youtu.be/VIDEO_ID
 ```
 
-### Spotify linki ile:
+### Spotify Bağlantısı ile Başlatma
 ```bash
 python beat_tree_visualizer.py https://open.spotify.com/track/TRACK_ID
 ```
 
-### Örnekler
-
-```bash
-# Dosya yolu
-python beat_tree_visualizer.py my_song.mp3
-
-# YouTube
-python beat_tree_visualizer.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-# Spotify
-python beat_tree_visualizer.py https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC
-```
-
-### Desteklenen Formatlar ve Kaynaklar
-
-**Dosya formatları:**
-- MP3, WAV, FLAC, M4A
-- Ve diğer librosa'nın desteklediği formatlar
-
-**Online kaynaklar:**
-- YouTube (yt-dlp ile)
-- Spotify (spotdl ile)
-
 ## Kontroller
 
-- **SPACE**: Oynat/Duraklat
-- **R**: Yeniden başlat
+Uygulama çalışırken klavyenizle şu komutları verebilirsiniz:
+
+- **BOŞLUK**: Oynat / Duraklat
+- **YÖN TUŞLARI**: İleri/Geri sarma ve Ses kontrolü
+- **R**: Görselleştirmeyi sıfırla
+- **T**: Temayı değiştir
+- **D**: Otomatik tema değişimini aç/kapat
 - **ESC**: Çıkış
 
-## Nasıl Çalışır?
+## Teknolojinin Arkasındaki Büyü
 
-1. Uygulama şarkıyı yükler ve beat'leri otomatik olarak tespit eder
-2. Her beat'te ağaç yapısı oluşturulur
-3. Beat yoğunluğu (enerji seviyesi) ağacın:
-   - Renklerini
-   - Dal uzunluklarını
-   - Açı farklarını
-   - Yaprak boyutlarını
-   
-   etkiler
+Bu projenin kalbinde birkaç güçlü kütüphane yatıyor:
+- **Librosa**: Müziğin matematiğini çözer ve ritmi algılar.
+- **Pygame**: Hesaplanan verileri akıcı bir görsel deneyime dönüştürür.
+- **Fractal Algoritmalar**: Doğadaki ağaç yapısını taklit ederek her seferinde benzersiz bir görüntü oluşturur.
 
-4. Ağaç yapısı her beat'te güncellenir ve görsel olarak gerçek zamanlı beat'leri gösterir
-
-## Teknik Detaylar
-
-- **Beat Detection**: librosa kütüphanesi kullanılarak yapılmaktadır
-- **Görselleştirme**: Pygame ile gerçek zamanlı render
-- **Audio Oynatma**: Pygame mixer ile senkron oynatma
-- **Ağaç Algoritması**: Recursive fractal ağaç yapısı
-- **YouTube İndirme**: yt-dlp kütüphanesi
-- **Spotify İndirme**: spotdl komut satırı aracı
-
-## Gereksinimler
-
-**Sistem Gereksinimleri:**
-- Python 3.8+
-- FFmpeg (audio formatları için gerekli)
-
-**Python Paketleri:**
-- librosa
-- pygame
-- numpy
-- matplotlib
-- soundfile
-- yt-dlp (YouTube için)
-- spotdl (Spotify için)
-
-## Notlar
-
-- YouTube linkleri için yt-dlp otomatik olarak çalışır
-- Spotify linkleri için spotdl'nin yüklü olması ve PATH'de bulunması gerekir
-- İndirilen dosyalar geçici dizinde saklanır ve görselleştirme sonrası silinebilir
+Umarım bu görselleştirici, müzik dinleme deneyiminize yeni bir boyut katar. Keyifli seyirler!
 
