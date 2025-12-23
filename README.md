@@ -1,13 +1,13 @@
 # Beat Tree Visualizer
 
-Bu proje, ses dosyalarını analiz ederek ritim vuruşlarını (beat) yakalar ve bu veriyi gerçek zamanlı bir görsel şölene çevirir. Şarkının yoğunluğuna göre renk değiştiren yapraklar ve ritme ayak uyduran dallar ile müziğinizi izlemenin keyfini çıkarın.
+Bu proje, ses dosyalarını analiz ederek ritim vuruşlarını (beat) yakalar ve bu veriyi gerçek zamanlı bir görselleştirir.
 
 ## Öne Çıkan Özellikler
 
 - **Akıllı Ritim Analizi**: Yüklediğiniz ses dosyasının ritmini ve vuruş noktalarını otomatik olarak algılar.
 - **Canlı Görselleştirme**: Müziğin her vuruşunda ağacın nasıl tepki verdiğini anlık olarak izleyin.
 - **Dinamik Atmosfer**: Şarkının enerjisine göre değişen renk paletleri ve büyüme efektleri.
-- **Kolay Kontrol**: Oynatma, duraklatma ve ses kontrolü parmaklarınızın ucunda.
+- **Kolay Kontrol**: Oynatma, duraklatma ve ses kontrolü .
 
 ## Kurulum ve Başlangıç
 
